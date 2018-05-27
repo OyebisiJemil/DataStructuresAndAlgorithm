@@ -36,10 +36,6 @@ namespace DataStructuresAndAlgorithm
                                                     new int[] {0, 0, 1, 2, 4, 0}
                                                   };
 
-
-
-
-
                      arrayProcessing.MaxOfTheSumOfHourGlass(array);
                      break;
                 default:

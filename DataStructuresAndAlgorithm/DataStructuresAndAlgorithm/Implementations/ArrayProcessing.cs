@@ -34,6 +34,7 @@ namespace DataStructuresAndAlgorithm.Implementations
             Console.Write(")");
         }
 
+
         public void MaxOfTheSumOfHourGlass(int[][] array)
         {
             int sum = 0;
