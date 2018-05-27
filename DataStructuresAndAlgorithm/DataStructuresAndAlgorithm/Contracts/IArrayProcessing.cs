@@ -9,6 +9,7 @@ namespace DataStructuresAndAlgorithm.Contracts
     public interface IArrayProcessing
     {
         void ReverseArrayInASingleSpaceSeparatedIntegers(int[] arrayOfElements);
-        void MaxOfHourGlasses(int[][] array);
+        void MaxOfTheSumOfHourGlass(int[][] array);
+        void LeftRotationOfAnArray(int[] array, int numberOfRotations);
     }
 }
