@@ -66,5 +66,39 @@ namespace DataStructuresAndAlgorithm.Implementations
             }
             Console.WriteLine("\nis: {0}",max);
         }
+
+        public void LeftRotationOfAnArray(int[] array, int numberOfRotations)
+        {
+            int tempStorage = 0;
+            Queue<int> queue = new Queue<int>();
+            //Put the elements on queue
+            foreach (var item in array)
+            {
+                queue.Enqueue(item);
+            }
+
+            //Rotate the elements based on the number of rotations supplied
+            for (int count = 0; count < numberOfRotations; count++)
+            {
+                //get the element in front of the queue
+                tempStorage = queue.Dequeue();
+
+                //add the element to the back of the queue
+                queue.Enqueue(tempStorage);
+            }
+
+            Console.WriteLine("The array before rotation");
+            foreach (var item in array)
+            {
+                Console.Write(item.ToString() + " ");
+            }
+            Console.WriteLine();
+            //new array after rotation
+            Console.WriteLine("The array after rotating it {0} times", numberOfRotations);
+            foreach (var item in queue)
+            {
+                Console.Write(item + " ");
+            }
+        }
     }
 }
