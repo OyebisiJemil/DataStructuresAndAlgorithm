@@ -100,5 +100,28 @@ namespace DataStructuresAndAlgorithm.Implementations
                 Console.Write(item + " ");
             }
         }
+
+        public void SparceArrays(string[] strings, string[] queries)
+        {
+            //Given a collection of input strings and a collection of query strings. 
+            //For each query string, determine how many times it occurs in the list of input strings.
+            Console.WriteLine("Given a collection of input strings and a collection of query strings.");
+            Console.WriteLine("This module determine how many times each query string occure in the input string.\n");
+            List<int> result = new List<int>();
+            foreach (var query in queries)
+            {
+                int counter = 0;
+                foreach (var item in strings)
+                {
+                    if (query == item)
+                    {
+                        counter++;
+                    }   
+                }
+
+                Console.WriteLine(" *{0}* appears {1} times in the input strings", query, counter);
+            }
+           
+        }
     }
 }

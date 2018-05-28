@@ -45,11 +45,18 @@ namespace DataStructuresAndAlgorithm
                     int numberOfRotations = int.Parse(Console.ReadLine());
                     arrayProcessing.LeftRotationOfAnArray(arrayToRotate, numberOfRotations);
                     break;
+                case 4:
+                    string[] strings = { "def", "de","jemil","jemil", "fgh","jemil" };
+                    string[] queries = { "de", "lmn", "fgh", "jemil" };
+                    arrayProcessing.SparceArrays(strings, queries);
+                    break;
                 default:
                     Console.WriteLine("Press a valid key between 1 and 2");
                     break;
             }
-            Console.ReadLine();
+            // Keep the console window open in debug mode.
+            Console.WriteLine("\n Press any key to exit.");
+            Console.ReadKey();
         }
     }
 }

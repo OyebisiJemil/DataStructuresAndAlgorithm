@@ -11,5 +11,6 @@ namespace DataStructuresAndAlgorithm.Contracts
         void ReverseArrayInASingleSpaceSeparatedIntegers(int[] arrayOfElements);
         void MaxOfTheSumOfHourGlass(int[][] array);
         void LeftRotationOfAnArray(int[] array, int numberOfRotations);
+        void SparceArrays(string[] strings, string[] queries);
     }
 }
